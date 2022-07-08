@@ -2,13 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="title" content="Kien Ngo" />
+    <meta name="description" content="Kien Ngo Portfolio Page" />
+    <meta name="keywords" content="portfolio,landing,resume" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Kien Ngo" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="/favicon.ico" />
     <title>Kien Ngo</title>
     <style>
-      html,
-      body {
+      body,
+      html {
         padding: 0;
         margin: 0;
         font-family: monospace;
@@ -17,6 +25,7 @@
         font-size: 18px;
         line-height: 27px;
       }
+
       a {
         color: inherit;
         text-decoration: none;
@@ -25,6 +34,7 @@
       * {
         box-sizing: border-box;
       }
+
       #navbar {
         height: 60px;
         width: 100%;
@@ -32,111 +42,129 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        position: sticky;
+        top: 0px;
       }
+
       .navlink {
         margin-top: auto;
         margin-bottom: auto;
-        color: white;
-        /* background-color: tomato; */
+        color: #fff;
         border-radius: 8rem;
         padding: 10px 20px;
         margin-left: 20px;
         cursor: pointer;
       }
+
+      #ContactSection,
       #container {
         display: flex;
         flex-direction: column;
       }
+
       .wrapper {
         display: flex;
         width: 100%;
         padding-bottom: 20px;
       }
+
       .highlightedBackground {
-        background-color: rgb(253, 238, 211);
+        background-color: #fdeed3;
       }
+
       .mainSection {
+        padding-left: 15px;
         scroll-padding-top: 40px;
         max-width: 720px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
       }
-      #ContactSection {
-        display: flex;
-        flex-direction: column;
-      }
-      #CareerSection details {
+
+      #CareerSection details,
+      details {
         border-bottom: 1px solid #333;
       }
+
       .contactLink {
-        color: rgb(59, 144, 172);
-        font-weight: bold;
+        color: #3b90ac;
+        font-weight: 700;
       }
+
       .techTag {
         border-radius: 8rem;
         padding-left: 8px;
         padding-right: 8px;
         cursor: pointer;
       }
+
       .techAstro {
-        color: white;
-        background-color: orangered;
+        color: #fff;
+        background-color: #ff4500;
       }
+
       .techNextJs {
-        color: white;
-        background-color: black;
+        color: #fff;
+        background-color: #000;
       }
+
       .tech2rdWeb {
-        color: white;
-        background-color: rgb(109, 0, 211);
+        color: #fff;
+        background-color: #6d00d3;
       }
+
+      .techReact,
+      .techAmplify,
       .techTailwind {
         color: #333;
-        background-color: aqua;
+        background-color: #0ff;
       }
-      .techReact {
-        color: #333;
-        background-color: aqua;
-      }
+
       .techWebflow {
-        color: white;
-        background-color: rgb(255, 0, 255);
+        color: #fff;
+        background-color: #f0f;
       }
+
       .techAngular {
-        color: white;
+        color: #fff;
         background-color: red;
       }
+
       .techJquery {
-        color: white;
+        color: #fff;
         background-color: brown;
       }
+
       .techIonic {
-        color: black;
-        background-color: aqua;
+        color: #000;
+        background-color: #0ff;
       }
+
       .techPlaycanvas {
-        color: black;
-        background-color: yellow;
+        color: #000;
+        background-color: #ff0;
       }
+
       .techSupabase {
-        color: white;
-        background-color: darkgreen;
+        color: #fff;
+        background-color: #006400;
       }
+
       .techReactNative {
-        color: white;
-        background-color: blue;
+        color: #fff;
+        background-color: #00f;
       }
-      .techAmplify {
-      }
+
       summary {
-        font-weight: bold;
-        cursor: pointer;
+        font-weight: 700;
       }
+
       .detailsContent {
         padding-left: 20px;
       }
-      #clipboardIcon {
+
+      #clipboardIcon,
+      summary {
         cursor: pointer;
       }
     </style>
@@ -274,7 +302,9 @@
           <div>Location: Toronto, ON</div>
           <div>
             Email: <span style="font-weight: bold">kientngo@proton.me</span>
-            <span id="clipboardIcon" onclick="navigator.clipboard.writeText('kientngo@proton.me')"
+            <span
+              id="clipboardIcon"
+              onclick="navigator.clipboard.writeText('kientngo@proton.me')"
               >&#128203;</span
             >
           </div>
